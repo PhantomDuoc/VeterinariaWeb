@@ -57,6 +57,10 @@ h6 {
     font-weight: 100;
 }
 
+.main-header__contactInfo {
+    width: 100%;
+}
+
 .main-header__contactInfo__phone {
     background: #de423a;
     color: #fff;

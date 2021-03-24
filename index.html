@@ -5,111 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria</title>
+    <title>Veterinaria Cola</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
         <div class="container container--flex">
-            <div class="logo-container column column--50">
-                <h1 class="logo">Veterinaria Cola</h1>
-            </div>
-            <div class="main-header__contactInfo column column--50">
-                <p class="main-header__contactInfo__phone">
-                    <span class="icon-phone">
-                        <img src="icons/icon-phone.png" alt="">
-                    </span>
-                </p>
-            </div>
+            <h1 class="logo">Veterinaria Proyecto</h1>
+        </div>
+        <div class="main-header__contactInfo column column--50">
+            <p class="main-header__contactInfo__phone">
+                <span class="icon-phone">
+                    <img src="icons/icon-phone.png" alt="">+569 1234 5678
+                </span>
+            </p>
+            <p class="main-header__contactInfo__adress">
+                <span class="icon-location">
+                    <img src="icons/icon-location.png" alt=""> Libertad #666 - Viña del Mar, Chile
+                </span>
+            </p>
         </div>
     </header>
-    <div class="banner">
-        <img src="img/banner.jpg" alt="Banner" class="banner__img">
-        <div class="container">
-            <h2 class="banner__titulo">La mejor atención para tus mascotas</h2>
-            <div class="banner__txt">Los cuidamos como si fueran nuestros</div>
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btn-menu">
+                <img src="icons/icon-menu.png" alt="">
+            </span>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="/" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="adopciones.html" class="menu__link">Adopciones</a>
+                </li>
+                <li class="menu__item">
+                    <a href="conocenos.html" class="menu__link">Conocenos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"><img src="icons/icon-facebook.png" alt=""></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"><img src="icons/icon-twitter.png" alt=""></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"><img src="icons/icon-mail.png" alt=""></span></a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <section class="banner">
+        <img src="img/banner.jpg" alt="" class="banner__img">
+        <div class="banner__content">Tus mascotas en las mejores manos</div>
+    </section>
+
     <main class="main">
-        <div class="container">
-            <section class="adopciones">
-                <h2 class="section__titulo">Mascotas en Adopción</h2>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 1</h2>
-                    <p class="adopciones__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, fuga!</p>
-                </article>
-            </section>
-            <section>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 2</h2>
-                    <p class="adopciones__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, nulla.</p>
-                </article>
-            </section>
-            <section>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 3</h2>
-                    <p class="adopciones__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, nulla.</p>
-                </article class="info__columna">
-            </section>
-            <section>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 4</h2>
-                    <p class="adopciones__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, nulla.</p>
-                </article>
-            </section>
-            <section>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 5</h2>
-                    <p class="adopciones__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, nulla.</p>
-                </article>
-            </section>
-            <section>
-                <article class="adopciones__columna">
-                    <img src="img/animal.jpg" alt="" class="adopciones__img">
-                    <h2 class="adopciones__titulo">Titulo 6</h2>
-                    <p class="adopciones__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, nulla.</p>
-                </article>
-            </section>
-            <section class="trabajadores">
-                <h2 class="section__titulo">Nuestros Trabajadores</h2>
-                <div class="trabajadores__columna">
-                    <img src="img/trabajador.jpg" alt="" class="trabajadores__img">
-                    <div class="trabajadores__descripcion">
-                        <h3 class="trabajadores__titulo">Hugo Cerda</h3>
-                        <p class="trabajadores__txt">Lorem ipsum dolor sit amet.</p>
-                    </div>
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Bienvenido a su Veterinaria</h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section class="group main__about__description">
+            <div class="container container--flex">
+                <div class="column column--50">
+                    <img src="img/veterinario.jpg" alt="">
                 </div>
-                <div class="trabajadores__columna">
-                    <img src="img/trabajador.jpg" alt="" class="trabajadores__img">
-                    <div class="trabajadores__descripcion">
-                        <h3 class="trabajadores__titulo">Hugo Cerda</h3>
-                        <p class="trabajadores__txt">Lorem ipsum dolor sit amet.</p>
-                    </div>
+                <div class="column column--50">
+                    <h3 class="column__title">Lorem, ipsum dolor.</h3>
+                    <p class="column__txt">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="btn btn--contact">Contacto</a>
                 </div>
-                <div class="trabajadores__columna">
-                    <img src="img/trabajador.jpg" alt="" class="trabajadores__img">
-                    <div class="trabajadores__descripcion">
-                        <h3 class="trabajadores__titulo">Hugo Cerda</h3>
-                        <p class="trabajadores__txt">Lorem ipsum dolor sit amet.</p>
-                    </div>
+            </div>
+        </section>
+
+        <section class="group today-special">
+            <h2 class="today-special__title">Mascotas en Adopción</h2>
+            <div class="container container__flex">
+                <div class="column column--50--25">
+                    <img src="" alt="" class="today-special__img">
+                    <div class="today-special__title">Cola</div>
+                    <div class="today-special__price">Romana</div>
                 </div>
-            </section>
-        </div>
+                <div class="column column--50--25">
+                    <img src="" alt="" class="today-special__img">
+                    <div class="today-special__title">Leon</div>
+                    <div class="today-special__price">Puddle-Maltes</div>
+                </div>
+                <div class="column column--50--25">
+                    <img src="" alt="" class="today-special__img">
+                    <div class="today-special__title">Bonnie</div>
+                    <div class="today-special__price">Labrador</div>
+                </div>
+                <div class="column column--50--25">
+                    <img src="" alt="" class="today-special__img">
+                    <div class="today-special__title">Negrita</div>
+                    <div class="today-special__price">Bombay</div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer class="footer">
-        <div class="social">
-            <a class="icon-facebook"></a>
-            <a class="icon-twitter"></a>
-            <a class="icon-instagram"></a>
-            <a class="icon-"></a>
+
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Libertad #666 - Valparaíso, Chile</p>
+                <p class="column__txt">Teléfono: +569 1234 5678</p>
+                <p class="column__txt">consultas@veterinariacola.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes sociales</h2>
+                <p class="column__txt">
+                    <a href="" class="icon-facebook"><img src="icons/facebook" alt="">Facebook</a>
+                </p>
+                <p class="column__txt">
+                    <a href="" class="icon-twitter"><img src="icons/icon-twitter.png" alt="">Síguenos en Twitter</a>
+                </p>
+                <p class="column__txt">
+                    <a href="" class="icon-youtube"><img src="icons/icon-youtube.png" alt="">Visita nuestro canal</a>
+                </p>
+            </div>
+            <p class="copy">&copy; 2021 Veterinaria Cola | Todos los derechos reservados</p>
         </div>
-        <p class="copy">&copy; Veterinaria 2021 - Todos los derechos reservados</p>
     </footer>
     <script src="js/menu.js"></script>
 </body>

@@ -31,7 +31,7 @@ h6 {
     margin: auto;
 }
 
-.container--flex {
+.container__flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,7 +94,8 @@ h6 {
 .icon-menu {
     display: block;
     color: #fff;
-    border: 1px solid white;
+    border: 1px solid;
+    background: white;
     border-radius: 3px;
     width: 40px;
     height: 40px;
@@ -109,8 +110,10 @@ h6 {
     justify-content: space-between;
 }
 
-.social-icon [class*="icon-"] {
+.social-icon__link [class*="icon"] {
     color: black;
+    background: white;
+    border: 1px solid white;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -192,4 +195,169 @@ h6 {
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.5em;
     font-weight: bold;
+}
+
+
+/*------------------------------------------------Estilos principales------------------------------------------------*/
+
+.group--color .container {
+    background: #de423a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.main__txt {
+    padding: 10px;
+}
+
+.column__title {
+    font-size: 1.3em;
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #de423a;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.group__title {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.today-special .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+}
+
+.today-special__title {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.today-special__price {
+    font-size: 1.5em;
+    color: #de423a;
+    font-weight: bold;
+}
+
+
+/*------------------------------------------------Estilos footer------------------------------------------------*/
+
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon"] {
+    color: white;
+    text-decoration: none;
+}
+
+.column__txt a img {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 5px;
+}
+
+
+/*------------------------------------------------Estilos responsive------------------------------------------------*/
+
+@media screen and (min-width:480px) {
+    .logo {
+        color: white;
+    }
+    .main-header__contactInfo {
+        text-align: right;
+    }
+    .main-header__contactInfo__phone {
+        background: none;
+    }
+    .main-header__contactInfo__address {
+        color: white;
+    }
+    .main-nav {
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .banner {
+        margin-top: -267px;
+        z-index: -1000;
+    }
+    .banner__img {
+        height: 600px;
+    }
+    .banner__content {
+        font-size: 2em;
+        padding-top: 200px;
+    }
+    .main {
+        padding-bottom: 15px;
+    }
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .main__about__description .btn {
+        margin: 0;
+    }
+    .today-special .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .today-special__img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .column--50 {
+        width: 49%;
+    }
+    .column--50--25 {
+        width: 49%;
+    }
+    .column--33 {
+        width: 32%k;
+    }
 }

@@ -81,6 +81,7 @@ h6 {
 
 .icon-phone img,
 .icon-location img {
+    display: inline-block;
     position: relative;
     top: 2px;
     right: 5px;
@@ -300,14 +301,16 @@ h6 {
 .column__txt a img {
     color: black;
     margin-left: 10px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    width: 35px;
-    height: 35px;
+    width: 15px;
+    height: 15px;
     background: white;
     border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 

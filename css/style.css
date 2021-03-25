@@ -298,6 +298,10 @@ h6 {
     text-decoration: none;
 }
 
+.column__txt {
+    word-wrap: break-word;
+}
+
 .column__txt a img {
     color: black;
     display: inline-block;

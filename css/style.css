@@ -389,7 +389,7 @@ h6 {
         font-size: 1em;
     }
     .main__about__description .column--50:nth-child(2) .column__txt {
-        line-height: 30px;
+        line-height: 50px;
     }
     .column--50--25 {
         width: 24.5%;
@@ -445,7 +445,7 @@ h6 {
         font-size: 2.3em;
     }
     .main__about__description .column--50:nth-child(2) .column__txt {
-        line-height: 45px;
+        line-height: 70px;
     }
     .today-special__title {
         font-size: 1.4em;

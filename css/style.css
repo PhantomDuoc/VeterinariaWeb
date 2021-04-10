@@ -253,23 +253,23 @@ h6 {
     margin: 30px;
 }
 
-.today-special .column {
+.adopciones .column {
     margin-bottom: 30px;
     text-align: center;
 }
 
-.today-special__img {
+.adopciones__img {
     margin: auto;
     max-width: 350px;
 }
 
-.today-special__title {
+.adopciones__titulo {
     font-size: 1.3em;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
-.today-special__price {
+.adopciones__raza {
     font-size: 1.4em;
     color: #de423a;
     font-weight: bold;
@@ -360,11 +360,11 @@ h6 {
     .main__about__description .btn {
         margin: 0;
     }
-    .today-special .column {
+    .adopciones .column {
         border: 5px solid #ddd;
         padding: 5px;
     }
-    .today-special__img {
+    .adopciones__img {
         height: 300px;
         object-fit: cover;
     }
@@ -451,10 +451,10 @@ h6 {
     .main__about__description .column--50:nth-child(2) .column__txt {
         line-height: 70px;
     }
-    .today-special__title {
+    .adopciones__titulo {
         font-size: 1.4em;
     }
-    .today-special__price {
+    .adopciones__raza {
         font-size: 1.8em;
     }
     .main-footer {
@@ -475,7 +475,7 @@ h6 {
         height: 800px;
         object-fit: cover;
     }
-    .today-special__img {
+    .adopciones__img {
         height: 300px;
     }
 }

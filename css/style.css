@@ -59,6 +59,7 @@ h6 {
 
 .main-header__contactInfo {
     width: 100%;
+    padding-right: 20px;
 }
 
 .main-header__contactInfo__phone {

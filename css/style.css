@@ -319,6 +319,19 @@ h6 {
 }
 
 
+/*------------------------------------------------Estilos formulario------------------------------------------------*/
+
+label,
+legend {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+legend {
+    color: #de423a;
+}
+
+
 /*------------------------------------------------Estilos responsive------------------------------------------------*/
 
 @media screen and (min-width:480px) {

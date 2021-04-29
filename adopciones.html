@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes, maximum-scale=3.0, minimum-scale=1.0">
-    <title>Veterinaria Cola</title>
+    <title>Adopciones | Veterinaria Cola</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adopciones.css">
     <link rel="shortcut icon" href="icons/icon.png">
 </head>
 
 <body>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <img src="" alt="" class="modal__img" id="modal__img">
+        </div>
+        <div class="modal__boton" id="modal__boton">X</div>
+    </div>
+
+
     <header class="main-header">
         <div class="container container--flex">
             <h1 class="logo">Veterinaria Cola</h1>
@@ -58,38 +67,23 @@
     </section>
 
     <main class="main">
-        <section class="group group--color">
-            <div class="container">
-                <h2 class="main__title">Adopta un amigo</h2>
-                <p class="main__txt">Tu mejor amigo te está esperando</p>
-            </div>
-        </section>
-
-        <section class="group adopciones">
-            <h2 class="group__title">Mascotas en Adopción</h2>
+        <div class="group gallery">
+            <h2 class="group__title">Nuestras Mascotas en Adopción</h2>
             <div class="container container--flex">
                 <div class="column column--50--25">
-                    <img src="img/cola.jpg" alt="" class="adopciones__img">
-                    <div class="adopciones__titulo">Cola</div>
-                    <div class="adopciones__raza">Romana</div>
+                    <img src="img/galeria/animal (1).jpg" alt="" class="gallery__img gallery__img-big"><img src="img/galeria/animal (2).jpg" alt="" class="gallery__img gallery__img-small">
                 </div>
                 <div class="column column--50--25">
-                    <img src="img/leon.jpg" alt="" class="adopciones__img">
-                    <div class="adopciones__titulo">Leon</div>
-                    <div class="adopciones__raza">Poodle-Maltes</div>
+                    <img src="img/galeria/animal (3).jpg" alt="" class="gallery__img gallery__img-small"><img src="img/galeria/animal (4).jpg" alt="" class="gallery__img gallery__img-big">
                 </div>
                 <div class="column column--50--25">
-                    <img src="img/bonnie.jpg" alt="" class="adopciones__img">
-                    <div class="adopciones__titulo">Bonnie</div>
-                    <div class="adopciones__raza">Labrador</div>
+                    <img src="img/galeria/animal (5).jpg" alt="" class="gallery__img gallery__img-big"><img src="img/galeria/animal (6).jpg" alt="" class="gallery__img gallery__img-small">
                 </div>
                 <div class="column column--50--25">
-                    <img src="img/negrita.jpg" alt="" class="adopciones__img">
-                    <div class="adopciones__titulo">Negrita</div>
-                    <div class="adopciones__raza">Bombay</div>
+                    <img src="img/galeria/animal (7).jpg" alt="" class="gallery__img gallery__img-small"><img src="img/galeria/animal (8).jpg" alt="" class="gallery__img gallery__img-big">
                 </div>
             </div>
-        </section>
+        </div>
 
     </main>
 
@@ -120,6 +114,7 @@
             <p class="copy">&copy; 2021 Veterinaria Cola | Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="js/modal.js"></script>
     <script src="js/menu.js"></script>
 </body>
 

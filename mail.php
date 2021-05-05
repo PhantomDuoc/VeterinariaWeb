@@ -41,7 +41,8 @@ try {
     $mail->Subject = 'Asunto';
     $mail->Body    = $body;
     $mail->send();
-    echo '<script>
+    echo 'El mensaje se envió correctamente
+    <script>
     alert("El mensaje se envió correctamente");
     window.history.go(-1)
     </script>';

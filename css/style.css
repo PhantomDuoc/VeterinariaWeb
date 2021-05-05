@@ -81,7 +81,8 @@ h6 {
 }
 
 .icon-phone img,
-.icon-location img {
+.icon-location img,
+.icon-mail img {
     display: inline-block;
     position: relative;
     top: 2px;

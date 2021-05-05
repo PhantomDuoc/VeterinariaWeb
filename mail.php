@@ -5,7 +5,7 @@ $telefono = $_POST["telefono"];
 $textarea = $_POST["textarea"];
 
 $body = "Nombre: " . $nombre
-. "<br>Correo: " . $correo
+. "<br>Correo: " . $email
 . "<br>Telefono: " . $telefono
 . "<br> Mensaje: " . $textarea;
 
@@ -33,13 +33,13 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('veterinariacola@gmail.com', 'Test');
+    $mail->setFrom('veterinariacola@gmail.com', $nombre);
     $mail->addAddress('veterinariacola@gmail.com');     //Add a recipient
 
    //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Asunto';
-    $mail->Body    = 'Prueba';
+    $mail->Body    = $body;
     $mail->send();
     echo '<script>
     alert("El mensaje se envió correctamente");

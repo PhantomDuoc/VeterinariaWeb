@@ -8,7 +8,8 @@ $(document).ready(function() {
             telefono: {
                 required: true,
                 number: true,
-                minlength: 9
+                minlength: 9,
+                maxlength: 9
             },
             email: {
                 required: true,
@@ -16,7 +17,8 @@ $(document).ready(function() {
             },
             textarea: {
                 required: true,
-                minlength: 25
+                minlength: 25,
+                maxlength: 250
             }
         },
         messages: {
@@ -27,7 +29,8 @@ $(document).ready(function() {
             telefono: {
                 required: "Por favor ingresa un número de teléfono",
                 number: "Por favor ingresa solo números.",
-                minlength: "El largo de tu teléfono deben ser 9 caracteres"
+                minlength: "El largo de tu teléfono deben ser 9 caracteres",
+                maxlength: "El largo de tu teléfono deben ser 9 caracteres"
             },
             email: {
                 required: "Por favor escribe tu correo",
@@ -35,7 +38,8 @@ $(document).ready(function() {
             },
             textarea: {
                 required: "Por favor escribe tu mensaje",
-                minlength: "Tu mensaje debe ser de al menos 25 caracteres"
+                minlength: "Tu mensaje debe ser de al menos 25 caracteres",
+                maxlength: "Tu mensaje no debe tener más de 250 caracteres"
             }
         }
     });

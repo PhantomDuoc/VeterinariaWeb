@@ -25,7 +25,7 @@ $(document).ready(function() {
                 minlength: "El nombre debe tener al menos 3 caracteres"
             },
             telefono: {
-                required: "Por favor ingrese un número de teléfono",
+                required: "Por favor ingresa un número de teléfono",
                 number: "Por favor ingresa solo números.",
                 minlength: "El largo de tu teléfono deben ser 9 caracteres"
             },

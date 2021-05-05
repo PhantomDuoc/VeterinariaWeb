@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes, maximum-scale=3.0, minimum-scale=1.0">
     <title>Contacto | Veterinaria Cola</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="shortcut icon" href="icons/icon.png">
 </head>
 
@@ -60,7 +61,7 @@
     <main class="main">
         <section class="group contact">
             <h2 class="group__title">Contáctenos</h2>
-            <div class="containter container--flex">
+            <div class="container container--flex">
                 <div class="contact-information column column--50">
                     <h3 class="column__title">Información de contacto</h3>
                     <p class="column__txt">
@@ -87,8 +88,24 @@
                             <img src="icons/icon-mail.png" alt="">
                         </span>consultas@veterinariacola.com
                     </p>
+                    <div class="social-icon">
+                        <a href="" class="social-icon__link"><span class="icon-"><img src="icons/icon-facebook.png" alt=""></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-"><img src="icons/icon-twitter.png" alt=""></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-"><img src="icons/icon-mail.png" alt=""></span></a>
+                    </div>
                 </div>
-                <div class="formulario column column--50"></div>
+                <form action="" method="" class="formulario column column--50" name="formulario">
+                    <label for="name" class="formulario__label">Nombre:</label>
+                    <input type="text" class="formulario__input-txt" name="nombre" id="nombre">
+                    <label for="" class="formulario__label">Correo:</label>
+                    <input type="email" class="formulario__input-txt" name="correo" id="correo">
+                    <label for="" class="formulario__label">Teléfono:</label>
+                    <input type="text" class="formulario__input-txt" name="telefono" id="telefono">
+                    <label for="" class="formulario__label">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="formulario__textarea">
+                    </textarea>
+                    <input type="submit" class="btn formulario__btn" value="Enviar">
+                </form>
             </div>
         </section>
     </main>
@@ -121,6 +138,7 @@
         </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>

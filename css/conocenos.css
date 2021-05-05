@@ -28,6 +28,11 @@
     padding: 10px;
 }
 
+#map {
+    height: 500px;
+    width: 100%;
+}
+
 @media screen and (min-width:480px) {
     .our-team__img {
         width: 150px;

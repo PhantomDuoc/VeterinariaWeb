@@ -17,7 +17,6 @@ require 'PHPMailer\SMTP.php';
 require 'PHPMailer\Exception.php';
 
 
-
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -29,7 +28,7 @@ try {
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'veterinariacola@gmail.com';                     //SMTP username
     $mail->Password   = 'potito123H';                               //SMTP password
-    $mail->SMTPSecure = 'PHPMailer::ENCRYPTION_SMTPS';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients

@@ -1,4 +1,17 @@
 <?php
+$nombre = $_POST["name"];
+$email = $_POST["email"];
+$telefono = $_POST["telefono"];
+$textarea = $_POST["textarea"];
+
+$body = "Nombre: " . $nombre
+. "<br>Correo: " . $correo
+. "<br>Telefono: " . $telefono
+. "<br> Mensaje: " . $textarea;
+
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer\PHPMailer.php';
 require 'PHPMailer\SMTP.php';
 require 'PHPMailer\Exception.php';
@@ -28,7 +41,10 @@ try {
     $mail->Subject = 'Asunto';
     $mail->Body    = 'Prueba';
     $mail->send();
-    echo 'El mensaje se envió correctamente';
+    echo '<script>
+    alert("El mensaje se envió correctamente");
+    window.history.go(-1)
+    </script>';
 } catch (Exception $e) {
     echo "Hubo un error al enviar el mensaje: {$mail->ErrorInfo}";
 }

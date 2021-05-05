@@ -20,7 +20,7 @@ function validarFormulario(evento) {
         alert('El telefono no es válido');
         return;
     }
-    var mensaje = document.getElementById('mensaje')
+    var mensaje = document.getElementById('mensaje').value;
     if (mensaje.length < 25) {
         alert('El largo mínimo de su mensaje es de 25 caracteres')
     }

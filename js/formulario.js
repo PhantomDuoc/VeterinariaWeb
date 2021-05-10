@@ -1,4 +1,55 @@
 $(document).ready(function() {
+    $('#btnSend').click(function() {
+        let errores = '';
+
+        //validar nombre
+        if ($('#nombre').val() == '') {
+            errores += '<p>Escriba un nombre</p>'
+            $('#nombre').css("border-bottom-color", "#F14B4B")
+        } else {
+            $('#nombre').css("border-bottom-color", "#d1d1d1")
+        }
+
+        //validar correo
+        if ($('#email').val() == '') {
+            errores += '<p>Escriba un email válido</p>'
+            $('#email').css("border-bottom-color", "#F14B4B")
+        } else {
+            $('#email').css("border-bottom-color", "#d1d1d1")
+        }
+
+        //validar telefono
+        if ($('#telefono').val() == '') {
+            errores += '<p>Escriba un telefono válido</p>'
+            $('#telefono').css("border-bottom-color", "#F14B4B")
+        } else {
+            $('#telefono').css("border-bottom-color", "#d1d1d1")
+        }
+
+        //validar mensaje
+        if ($('#mensaje').val() == '') {
+            errores += '<p>Escriba un mensaje válido</p>'
+            $('#mensaje').css("border-bottom-color", "#F14B4B")
+        } else {
+            $('#mensaje').css("border-bottom-color", "#d1d1d1")
+        }
+
+        //enviar mensaje
+        if (errores == '' == false) {
+            let mensajeModal = '<div class="modal-warp">' +
+                '<div class="mensaje_modal">' +
+                '<h3>Errores encontrados</h3>' + errores +
+                '<span id="btnClose">Cerrar</span>' +
+                '</div>' +
+                '</div>'
+            $('body').append(mensajeModal)
+        }
+        //cerrar modal
+        $("#btnClose").click(function() {
+            $('.modal_wrap').remove();
+        })
+    })
+
     $("#formulario").validate({
         rules: {
             name: {
@@ -44,3 +95,26 @@ $(document).ready(function() {
         }
     });
 });
+
+function enviar_datos_ajax() {
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let telefono = document.getElementById("telefono").value;
+    let mensaje = document.getElementById("textarea").value;
+
+    let url = "procesar_datos.php";
+
+    $.ajax({
+        type: "post",
+        url: url,
+        data: {
+            nombre: nombre,
+            email: email,
+            telefono: telefono,
+            mensaje: mensaje
+        },
+        success: function(data) {
+            $("#mostrardatos").html(data);
+        }
+    })
+}
